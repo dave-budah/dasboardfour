@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Crypto Dashboard</title>
+    <meta name="description" content="Dashboard with switchable theme">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="Crypto Dashboard">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.selvigtech.com">
+    <meta property="og:description" content="Crypto Dashboard demo page">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="images/logos/favicon.png">
+    <link rel="icon" href="images/logos/favicon.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/logos/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav>
+    <div class="container">
+        <img src="images/logos/logo.png" alt="" class="logo">
+        <div class="search__bar">
+            <span class="fa fa-search"></span>
+            <input type="search" placeholder="Search...">
+        </div>
+        <div class="profile__area">
+            <div class="theme__btn">
+               <span class="active"><i class="fa fa-sun"></i></span>
+              <span><i class="fa fa-moon"></i></span>
+            </div>
+            <a class="profile">
+               <div class="profile__photo">
+                   <img src="images/profile.jpg" alt="">
+               </div>
+                <h5>Dave Budah</h5>
+                <span class="fa fa-caret-down"></span>
+
+                <ul class="ani-menu">
+                    <li><a href=""><i class="fa fa-user"></i> Profile</a></li>
+                    <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
+                    <li><a href=""><i class="fa fa-lock"></i> Logout</a></li>
+                </ul>
+            </a>
+            <button id="menu__btn">
+                <span class="fa fa-bars"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- End nav here -->
+
+<main>
+    <aside>
+    <button id="close__btn">
+        <span class="fa fa-times"></span>
+    </button>
+        <div class="sidebar">
+            <a href="" class="active">
+                <span><i class="fa fa-home"></i></span>
+                <h4>Dashboard</h4>
+            </a>
+            <a href="">
+                <span><i class="fa fa-comment"></i></span>
+                <h4>Posts</h4>
+            </a>
+            <a href="">
+                <span><i class="fa fa-comment-dots"></i></span>
+                <h4>Comments</h4>
+            </a>
+            <a href="">
+                <span><i class="fa fa-users"></i></span>
+                <h4>Users</h4>
+            </a>
+            <a href="">
+                <span><i class="fa fa-credit-card"></i></span>
+                <h4>Subscriptions</h4>
+            </a>
+            <a href="">
+                <span><i class="fa fa-cogs"></i></span>
+                <h4>Settings</h4>
+            </a>
+            <a href="">
+                <span><i class="fa fa-question"></i></span>
+                <h4>Help</h4>
+            </a>
+        </div>
+
+<!--        Updates -->
+        <div class="updates">
+           <span> <i class="fa fa-cog"></i></span>
+            <h4>Updates Available</h4>
+            <p>General Updates</p>
+            <p>Security Updates</p>
+            <a href="">Update Now</a>
+        </div>
+<!--        Updates End here-->
+    </aside>
+    <section class="middle">
+        <div class="header">
+            <h1>Overview</h1>
+            <input type="date">
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="top">
+                    <div class="left">
+                        <span><i class="fa fa-users"></i></span>
+                        <h2>Users</h2>
+                    </div>
+                    <div class="right">
+                        <span><i class="fa fa-users-slash"></i></span>
+                        <h2>Suspended</h2>
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <h1>00000</h1>
+                    <div class="chip">
+                        <h1>00000</h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <small>As Of</small>
+                        <h5>08/24/22</h5>
+                    </div>
+                    <div class="right">
+                        <div class="expiry">
+                            <small>As Of</small>
+                            <h5>08/24/22</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            Second Card -->
+            <div class="card">
+                <div class="top">
+                    <div class="left">
+                        <span><i class="fa fa-credit-card"></i></span>
+                        <h2>Subscriptions</h2>
+                    </div>
+                    <div class="right">
+                        <span><i class="fa fa-credit-card"></i></span>
+                        <h2>Suspended</h2>
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <h1>00000</h1>
+                    <div class="chip">
+                        <h1>00000</h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <small>As Of</small>
+                        <h5>08/24/22</h5>
+                    </div>
+                    <div class="right">
+                        <div class="expiry">
+                            <small>As Of</small>
+                            <h5>08/24/22</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            Second Card ends here -->
+<!--            Third Card -->
+            <div class="card">
+                <div class="top">
+                    <div class="left">
+                        <span><i class="fa fa-cloud-upload"></i></span>
+                        <h2>Uploads</h2>
+                    </div>
+                    <div class="right">
+                        <span><i class="fa fa-cloud-arrow-down"></i></span>
+                        <h2>Suspended</h2>
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <h1>00000</h1>
+                    <div class="chip">
+                        <h1>00000</h1>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <small>As Of</small>
+                        <h5>08/24/22</h5>
+                    </div>
+                    <div class="right">
+                        <div class="expiry">
+                            <small>As Of</small>
+                            <h5>08/24/22</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            Third Card -->
+        </div>
+
+        <div class="monthly-report">
+            <div class="report">
+                <h3>Income</h3>
+                <div>
+                    <details>
+                       <h1>0000</h1>
+                        <h6 class="success">0000</h6>
+                    </details>
+                    <p class="text-muted">Compared to 000 last month</p>
+                </div>
+            </div>
+
+            <div class="report">
+                <h3>Expenses</h3>
+                <div>
+                    <details>
+                        <h1>0000</h1>
+                        <h6 class="danger">0000</h6>
+                    </details>
+                    <p class="text-muted">Compared to 000 last month</p>
+                </div>
+            </div>
+
+            <div class="report">
+                <h3>Cashback</h3>
+                <div>
+                    <details>
+                        <h1>0000</h1>
+                        <h6 class="success">0000</h6>
+                    </details>
+                    <p class="text-muted">Compared to 000 last month</p>
+                </div>
+            </div>
+
+            <div class="report">
+                <h3>Taxes</h3>
+                <div>
+                    <details>
+                        <h1>0000</h1>
+                        <h6 class="success">0000</h6>
+                    </details>
+                    <p class="text-muted">Compared to 000 last month</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fast-payment">
+            <h2>Fast Payment</h2>
+            <div class="badges">
+                <div class="badge">
+                    <span><i class="fa fa-plus-circle"></i></span>
+                </div>
+                <div class="badge">
+                    <span class="bg-primary"></span>
+                    <div>
+                        <h5>Marketing</h5>
+                        <h4>$57</h4>
+                    </div>
+                </div>
+
+                <div class="badge">
+                    <span class="bg-primary"></span>
+                    <div>
+                        <h5>Taxes</h5>
+                        <h4>$348</h4>
+                    </div>
+                </div>
+
+                <div class="badge">
+                    <span class="bg-primary"></span>
+                    <div>
+                        <h5>Salaries</h5>
+                        <h4>$3800</h4>
+                    </div>
+                </div>
+
+                <div class="badge">
+                    <span class="bg-primary"></span>
+                    <div>
+                        <h5>Data</h5>
+                        <h4>$70</h4>
+                    </div>
+                </div>
+
+                <div class="badge">
+                    <span class="bg-primary"></span>
+                    <div>
+                        <h5>Stationery</h5>
+                        <h4>$23</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="table__holder">
+            <h2>Recent users</h2>
+            <table>
+                <tbody>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Favorite Movie</th>
+                    <th>Favorite Band/Aritst</th>
+                    <th>Favorite Food</th>
+                    <th>Favorite Drink</th>
+                    <th>Subscriber?</th>
+                    <th>Account Status</th>
+                    <th>Last Login Date</th>
+                </tr>
+                <tr>
+                    <td>Ron</td>
+                    <td>Wilson</td>
+                    <td>30</td>
+                    <td>Wizard of Oz</td>
+                    <td>Oasis</td>
+                    <td>Pizza</td>
+                    <td>Beer</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-14</td>
+                </tr>
+                <tr>
+                    <td>Armando</td>
+                    <td>Reyes</td>
+                    <td>17</td>
+                    <td>Star Wars</td>
+                    <td>Phantogram</td>
+                    <td>Donuts</td>
+                    <td>Soda</td>
+                    <td>No</td>
+                    <td>On Hold</td>
+                    <td>2022-05-10</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Thompkins</td>
+                    <td>62</td>
+                    <td>Ghostbusters</td>
+                    <td>Arcade Fire</td>
+                    <td>French Fries</td>
+                    <td>Water</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-13</td>
+                </tr>
+                <tr>
+                    <td>Lorraine</td>
+                    <td>Schugel</td>
+                    <td>25</td>
+                    <td>Moana</td>
+                    <td>Bush</td>
+                    <td>Cereal</td>
+                    <td>Wine</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-30</td>
+                </tr>
+                <tr>
+                    <td>Ron</td>
+                    <td>Wilson</td>
+                    <td>30</td>
+                    <td>Wizard of Oz</td>
+                    <td>Oasis</td>
+                    <td>Pizza</td>
+                    <td>Beer</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-14</td>
+                </tr>
+                <tr>
+                    <td>Armando</td>
+                    <td>Reyes</td>
+                    <td>17</td>
+                    <td>Star Wars</td>
+                    <td>Phantogram</td>
+                    <td>Donuts</td>
+                    <td>Soda</td>
+                    <td>No</td>
+                    <td>On Hold</td>
+                    <td>2022-05-10</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Thompkins</td>
+                    <td>62</td>
+                    <td>Ghostbusters</td>
+                    <td>Arcade Fire</td>
+                    <td>French Fries</td>
+                    <td>Water</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-13</td>
+                </tr>
+                <tr>
+                    <td>Lorraine</td>
+                    <td>Schugel</td>
+                    <td>25</td>
+                    <td>Moana</td>
+                    <td>Bush</td>
+                    <td>Cereal</td>
+                    <td>Wine</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-30</td>
+                </tr>
+                <tr>
+                    <td>Ron</td>
+                    <td>Wilson</td>
+                    <td>30</td>
+                    <td>Wizard of Oz</td>
+                    <td>Oasis</td>
+                    <td>Pizza</td>
+                    <td>Beer</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-14</td>
+                </tr>
+                <tr>
+                    <td>Armando</td>
+                    <td>Reyes</td>
+                    <td>17</td>
+                    <td>Star Wars</td>
+                    <td>Phantogram</td>
+                    <td>Donuts</td>
+                    <td>Soda</td>
+                    <td>No</td>
+                    <td>On Hold</td>
+                    <td>2022-05-10</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Thompkins</td>
+                    <td>62</td>
+                    <td>Ghostbusters</td>
+                    <td>Arcade Fire</td>
+                    <td>French Fries</td>
+                    <td>Water</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-13</td>
+                </tr>
+                <tr>
+                    <td>Lorraine</td>
+                    <td>Schugel</td>
+                    <td>25</td>
+                    <td>Moana</td>
+                    <td>Bush</td>
+                    <td>Cereal</td>
+                    <td>Wine</td>
+                    <td>Yes</td>
+                    <td>Paid</td>
+                    <td>2022-05-30</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+<!--    End Section Middle here -->
+    <section class="right">
+        <div class="recents">
+            <div class="header">
+                <h2>Analytics</h2>
+                <a href="">More <span><i class="fa fa-chevron-right"></i></span></a>
+            </div>
+
+            <div class="recent">
+                <img src="images/uniliver.png" alt="">
+                <h4>Uniliver</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="danger">-4.27%</small>
+                </div>
+            </div>
+<!--            Recents end here -->
+
+            <div class="recent">
+                <img src="images/tesla.png" alt="">
+                <h4>Tesla</h4>
+                <div class="date-time">
+                    <p>4 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+4.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/monster.png" alt="">
+                <h4>Monster</h4>
+                <div class="date-time">
+                    <p>1 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="danger">-4.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/mcdonalds.png" alt="">
+                <h4>McDonald's</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+8.27%</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="recents recents__bottom">
+            <div class="header">
+                <h2>Recent Expenses</h2>
+                <a href="">More <span><i class="fa fa-chevron-right"></i></span></a>
+            </div>
+
+            <div class="recent">
+                <img src="images/ETH.png" alt="">
+                <h4>Enthurium</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="danger">-4.27%</small>
+                </div>
+            </div>
+            <!--            Recents end here -->
+
+            <div class="recent">
+                <img src="images/EURO.png" alt="">
+                <h4>Euro</h4>
+                <div class="date-time">
+                    <p>4 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+4.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/monster.png" alt="">
+                <h4>Monster</h4>
+                <div class="date-time">
+                    <p>1 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="danger">-4.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/mcdonalds.png" alt="">
+                <h4>McDonald's</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+8.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/visa.png" alt="">
+                <h4>Visa</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+8.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/master%20card.png" alt="">
+                <h4>Mastercard</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+8.27%</small>
+                </div>
+            </div>
+
+            <div class="recent">
+                <img src="images/BTC.png" alt="">
+                <h4>Bitcoin</h4>
+                <div class="date-time">
+                    <p>3 May, 2022</p>
+                    <small class="text-muted">23:08</small>
+                </div>
+                <div class="bonds">
+                    <p>1402</p>
+                    <small class="text-muted">Bonds</small>
+                </div>
+                <div class="amount">
+                    <h4>$20, 033</h4>
+                    <small class="success">+8.27%</small>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="js/fontawesome.all.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
